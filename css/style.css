@@ -1,0 +1,878 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.head {
+  background-image: url(../images/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #000000;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 145px;
+  padding-top: 26px;
+}
+
+.head::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #000000;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  width: 1166px;
+  margin: auto auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 180px;
+}
+
+.ref {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-list-item {
+  display: inline-flex;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: "Open Sans Regular";
+}
+
+.menu-list-item:nth-child(n + 2) {
+  margin-left: 35px;
+}
+
+.title {
+  width: 690px;
+  margin: 127px auto 0px auto;
+  text-align: center;
+}
+
+.label {
+  color: white;
+  font-family: "Open Sans Bolt";
+  font-size: 45px;
+  line-height: 75px;
+  text-transform: uppercase;
+}
+
+@font-face {
+  font-family: "Open Sans Bolt";
+  src: url(../fonts/OpenSans-Bold.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url(../fonts/OpenSans-Regular.woff);
+}
+
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+
+
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+}
+
+.you-feedback {
+  display: block;
+  font-size: 20px;
+  font-family: "Open Sans Bolt";
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.you-feedback::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 65px;
+  height: 3px;
+  background: #b59f5b;
+  margin-left: 165px;
+  margin-top: 10px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+
+}
+
+.question-form {
+  font-size: 12px;
+  font-family: "Open Sans Regular";
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.select {
+  background-color: #f3f5f9;
+  border: none;
+  height: 45px;
+  width: 330px;
+  background-image: url("../svg/form-arrows.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: #6f7175;
+  padding-left: 10px;
+  font-size: 12px;
+  font-family: "Open Sans Regular";
+}
+
+.select:hover {
+  background-color: #d2d4d7;
+}
+
+.subscription {
+  display: flex;
+ flex-direction: column;
+  margin-top: 25px;
+}
+
+.subscription-text {
+  font-size: 12px;
+  font-family: "Open Sans Regular";
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.radio-group-text {
+  font-size: 12px;
+  font-family: "Open Sans Regular";
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.radio-group-text::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url("../svg/form-empty-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 15px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.radio:checked ~ .radio-group-text::before {
+  background-image: url("../svg/form-circle.svg");
+}
+
+.radio {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  height: 1px;
+  width: 1px;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.story-theme {
+  font-size: 12px;
+  font-family: "Open Sans Regular";
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+textarea {
+  height: 130px;
+  width: 330px;
+  background-color: #f3f5f9;
+  border: none;
+}
+
+.story-text {
+  font-size: 12px;
+  font-family: "Open Sans Regular";
+  font-weight: bold;
+  padding: 20px;
+}
+
+.trends {
+  display: block;
+  font-size: 20px;
+  font-family: "Open Sans Bolt";
+  line-height: 29px;
+  text-transform: uppercase;
+  margin: 60px auto 0px auto;
+  text-align: center;
+  width: 205px;
+}
+
+.trends::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 65px;
+  height: 3px;
+  background: #b59f5b;
+  margin-left: 70px;
+  margin-top: 10px;
+}
+
+.link-trend {
+  text-decoration: none;
+  color: #0f0d0e;
+}
+
+.trend-bar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.part-one {
+  background-image: url(../images/trend1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+  position: relative;
+  z-index: 0;
+  margin-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  height: 330px;
+  display: flex;
+  align-items: flex-end;
+  width: 25%;
+}
+
+.part-one::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: black;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.part-two {
+  background-image: url(../images/trend2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+  position: relative;
+  z-index: 0;
+  margin-top: 50px;
+  margin-left: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  height: 330px;
+  display: flex;
+  align-items: flex-end;
+  width: 25%;
+}
+
+.part-two::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: black;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.part-three {
+  background-image: url(../images/trend3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+  position: relative;
+  z-index: 0;
+  margin-top: 50px;
+  margin-left: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+  height: 330px;
+  width: 25%;
+}
+
+.part-three::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: black;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.part-four {
+  background-image: url(../images/trend4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+  position: relative;
+  z-index: 0;
+  margin-top: 50px;
+  margin-left: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  height: 330px;
+  display: flex;
+  align-items: flex-end;
+  width: 25%;
+}
+
+.part-four::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: black;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+  border: 2px solid #b59f5b;
+}
+
+.menu-bar {
+  display: inline-flex;
+  list-style-type: none;
+}
+
+.link-bar {
+  text-transform: uppercase;
+  color: #b59f5b;
+  font-family: "Open Sans Bolt";
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.list-bar:nth-child(n + 2) {
+  padding-left: 15px;
+}
+
+.heading-bar {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Open Sans Bolt";
+  margin: auto;
+  text-align: left;
+  line-height: 24px;
+}
+
+.body {
+  display: flex;
+  width: 1170px;
+  margin: 60px auto 0px;
+  padding: 0px 15px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 775px;
+}
+
+.content {
+  display: flex;
+}
+
+.theme {
+  margin-right: 30px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+}
+
+.content:nth-child(n + 2) {
+  margin-top: 60px;
+}
+
+.article-list {
+  list-style-type: none;
+  display: inline-flex;
+  margin-bottom: 15px;
+}
+
+.article-list-item:nth-child(n + 2) {
+  margin-left: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: #b59f5b;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 0px;
+  font-family: "Open Sans Bolt";
+}
+
+.description {
+  margin-bottom: 30px;
+}
+
+.headline {
+  color: #0f0d0e;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Open Sans Bolt";
+  line-height: 24px;
+}
+
+.findings {
+  display: flex;
+}
+
+.data {
+  color: #888888;
+  font-size: 12px;
+  font-family: "Open Sans Regular";
+}
+
+.writer {
+  color: #000000;
+  font-size: 12px;
+  font-family: "Open Sans Bolt";
+  margin-left: 12px;
+}
+
+.paragraph {
+  margin-top: 28px;
+}
+
+.text {
+  color: #0f0d0e;
+  font-size: 15px;
+  font-family: "Open Sans Regular";
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  margin-left: 125px;
+  width: 275px;
+}
+
+.headlined {
+  display: block;
+  color: #0f0d0e;
+  font-size: 14px;
+  font-family: "Open Sans Bolt";
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.headlined::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 65px;
+  height: 3px;
+  background: #b59f5b;
+  margin-left: 105px;
+  margin-top: 14px;
+}
+
+.new-post {
+  display: flex;
+}
+
+.new-post:nth-child(n + 2) {
+  margin-top: 15px;
+}
+
+.post-list {
+  display: flex;
+  margin-right: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  color: #000000;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Open Sans Bolt";
+  margin-top: 10px;
+  line-height: 18px;
+}
+
+.search-field {
+  display: inline-flex;
+  width: 275px;
+  margin-top: 60px;
+}
+
+.hint {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
+
+.search {
+  width: 225px;
+  height: 50px;
+  background-color: #e8e8e8;
+  border-style: none;
+  outline-style: none;
+  color: #000000;
+  font-size: 13px;
+  text-transform: capitalize;
+  font-family: "Open Sans Regular";
+  padding-left: 20px;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  background-color: #b59f5b;
+  border-style: none;
+  cursor: pointer;
+  outline-style: none;
+}
+
+.button:hover {
+  background-color: #978241;
+}
+
+.mailing {
+  margin-top: 60px;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  width: 275px;
+  margin-top: 20px;
+}
+
+.address {
+  background-color: #e8e8e8;
+  border-style: none;
+  color: #000000;
+  font-size: 13px;
+  font-family: "Open Sans Regular";
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  height: 50px;
+  width: 275px;
+}
+
+.subscribe {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Open Sans Bolt";
+  text-transform: uppercase;
+  background-color: #b59f5b;
+  border-style: none;
+  outline-style: none;
+  cursor: pointer;
+  height: 50px;
+}
+
+.subscribe:hover {
+  background-color: #978241;
+}
+
+.tags {
+  width: 275px;
+  margin-top: 60px;
+}
+
+.tags-list {
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  width: 275px;
+}
+
+.tags-list-item {
+  display: flex;
+  border: 3px solid #e8e8e8;
+  padding: 8px 12px;
+  margin: 7px 5px;
+}
+
+.tags-link {
+  font-size: 12px;
+  font-family: "Open Sans Bolt";
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #0f0d0e;
+}
+
+.group {
+  width: 275px;
+  margin-top: 60px;
+}
+
+.group-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  width: 275px;
+  margin-top: 10px;
+}
+
+.group-list-item {
+  display: flex;
+  border: 2px #e8e8e8;
+  border-style: none none solid none;
+  padding: 20px 0px;
+}
+
+.group-link {
+  font-size: 14px;
+  font-family: "Open Sans Bolt";
+  color: #000000;
+  text-decoration: none;
+}
+
+.number {
+  font-size: 12px;
+  font-family: "Open Sans Bolt";
+  color: #b59f5b;
+  vertical-align: text-top;
+  margin-left: 4px;
+}
+
+.our-products {
+  display: flex;
+  width: 1170px;
+  margin: auto;
+  margin-top: 40px;
+  justify-content: space-around;
+}
+
+.goods {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.product {
+  outline: 3px solid #b59f5b;
+  outline-offset: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-bottom: 30px;
+}
+
+.product-content {
+  width: 300px;
+  margin-top: 20px;
+}
+
+.price-list {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+}
+
+.shop {
+  width: 160px;
+  height: 50px;
+  color: white;
+  font-size: 14px;
+  font-family: "Open Sans Bolt";
+  text-transform: uppercase;
+  background-color: #b59f5b;
+  border-style: none;
+  outline-style: none;
+  cursor: pointer;
+}
+
+.shop:hover {
+  background-color: #978241;
+}
+
+.old-price {
+  font-size: 14px;
+  font-family: "Open Sans Bolt";
+  text-decoration: line-through;
+  color: #000000;
+  font-weight: bold;
+}
+
+.new-price {
+  font-size: 20px;
+  font-family: "Open Sans Bolt";
+  color: #000000;
+  font-weight: bold;
+}
+
+.goods:nth-child(n+2) {
+  margin-left: 66px;
+}
+
+.link-goods {
+  font-size: 20px;
+  font-family: "Open Sans Bolt";
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.text-goods {
+  font-size: 15px;
+  line-height: 22px;
+  font-family: "Open Sans Bolt";
+  color: #000000;
+}
+
+.link-text {
+  text-decoration: none;
+  text-transform: lowercase;
+  color: #b59f5b;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto auto;
+  margin-top: 60px;
+  padding-bottom: 40px;
+}
+
+.socials {
+  display: flex;
+  margin: auto;
+  background-color: #e8e8e8;
+  width: 1170px;
+  list-style-type: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: center;
+}
+
+.socials-item {
+  display: flex;
+}
+
+.socials-item:nth-child(n + 2) {
+  margin-left: 30px;
+}
+
+.socials-link {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-color: #e8e8e8;
+  background-position: center;
+}
+
+.socials-link-twitter {
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg");
+}
+
+.socials-link-tumblr {
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
+}
+
+.socials-link-facebook {
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg");
+}
+
+.socials-link-instagram {
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg");
+}
+
+.socials-link-pinterest {
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg");
+}
+
+.socials-link-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 75px;
+}
+
+.copyright-text {
+  font-size: 12px;
+  font-family: "Open Sans Bolt";
+  color: #999999;
+}
