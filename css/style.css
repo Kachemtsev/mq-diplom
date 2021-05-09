@@ -265,10 +265,7 @@ textarea {
   position: relative;
   z-index: 0;
   margin-top: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 20px;
-  height: 330px;
+  padding: 160px 20px 25px;
   display: flex;
   align-items: flex-end;
   width: 25%;
@@ -295,10 +292,7 @@ textarea {
   z-index: 0;
   margin-top: 50px;
   margin-left: 5px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 20px;
-  height: 330px;
+  padding: 160px 20px 25px;
   display: flex;
   align-items: flex-end;
   width: 25%;
@@ -325,12 +319,9 @@ textarea {
   z-index: 0;
   margin-top: 50px;
   margin-left: 5px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 20px;
+  padding: 160px 20px 25px;
   display: flex;
   align-items: flex-end;
-  height: 330px;
   width: 25%;
 }
 
@@ -355,10 +346,7 @@ textarea {
   z-index: 0;
   margin-top: 50px;
   margin-left: 5px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 20px;
-  height: 330px;
+  padding: 160px 20px 25px;
   display: flex;
   align-items: flex-end;
   width: 25%;
@@ -876,3 +864,4 @@ textarea {
   font-family: "Open Sans Bolt";
   color: #999999;
 }
+
