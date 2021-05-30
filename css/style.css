@@ -250,7 +250,6 @@ textarea {
 
 .trend-bar {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
   margin-top: 50px;
 }
@@ -328,6 +327,7 @@ textarea {
   margin: auto;
   text-align: left;
   line-height: 24px;
+  text-decoration: none;
 }
 
 .body {
@@ -347,6 +347,8 @@ textarea {
 
 .theme {
   margin-right: 30px;
+  width: 380px;
+  max-width: 100%;
 }
 
 .content:nth-child(n+2) {
@@ -415,8 +417,6 @@ textarea {
 }
 
 .side-bar {
-  display: flex;
-  flex-direction: column;
   margin-left: 125px;
   width: 275px;
 }
@@ -562,7 +562,7 @@ textarea {
 .tags-list-item {
   border: 3px solid #e8e8e8;
   padding: 8px 12px;
-  margin-left: 10px;
+  margin-right: 10px;
   margin-top: 14px;
 }
 
@@ -639,9 +639,7 @@ textarea {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-right: 20px;
+  margin-top: 20px;
 }
 
 .price {
@@ -779,4 +777,43 @@ textarea {
   font-size: 12px;
   font-family: "Open Sans Bolt";
   color: #999999;
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+  .container {
+    width: 768px;
+  }
+  .trend-bar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .part, .part-two, .part-three, .part-four {
+    width: calc(50% - 5px);
+  }
+  .body {
+    width: 768px;
+  }
+  .container {
+    width: 768px;
+  }
+  .content {
+    flex-direction: column;
+    width: 395px;
+  }
+  .theme {
+    width: 395px;
+  }
+  .side-bar {
+    margin-right: 35px;
+    width: 270px;
+  }
+  .our-products {
+    width: 768px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .socials {
+    width: 768px;
+  }
 }
